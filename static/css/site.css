@@ -354,3 +354,4 @@ table.data .vs { color: var(--muted); font-size: .88em; }
   .clips { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+.showcase p { margin: 0 6px 10px; color: var(--text-2); font-size: 14.5px; line-height: 1.45; }
