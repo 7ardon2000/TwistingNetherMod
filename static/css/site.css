@@ -224,6 +224,12 @@ th[aria-sort="descending"] .sort::after { content: " ▼"; opacity: 1; color: va
 .star { color: var(--fel); margin-left: 6px; }
 .race-badge { display: inline-block; font: 700 11px/1 var(--f-head); letter-spacing: .08em; text-transform: uppercase; color: var(--rc); padding: 4px 6px; background: rgba(0, 0, 0, .35); border: 1px solid color-mix(in srgb, var(--rc) 40%, transparent); }
 table.data .vs { color: var(--muted); font-size: .88em; }
+/* a wide table that fits the text column on a normal screen; .table-wrap scrolls only when the screen is too small */
+table.data.compact { font-size: 13px; }
+table.data.compact td { padding: 6px 5px; }
+table.data.compact th { padding-left: 5px; padding-right: 5px; letter-spacing: .03em; font-size: 10.5px; }
+table.data.compact .race-badge { letter-spacing: .02em; font-size: 10px; }
+table.data.compact .vs { font-size: .85em; }
 .sc2-cell { color: var(--text-2); white-space: nowrap; }
 .filters { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin: 0 0 10px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
