@@ -173,6 +173,8 @@ h2.title { font-size: clamp(25px, 3vw, 34px); }
 .clip video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #050605; border: 1px solid #000; }
 .clip figcaption { font: 700 12.5px/1 var(--f-head); letter-spacing: .08em; text-transform: uppercase; color: var(--text-2); padding: 9px 6px 5px; }
 .clip-link { display: block; color: inherit; }
+.clip.yt { max-width: 960px; margin: 0 auto; }
+.clip.yt iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid #000; background: #050605; }
 .clip-link:hover { text-decoration: none; filter: brightness(1.1); }
 
 /* prose pages */
@@ -344,6 +346,7 @@ table.data.compact .vs { font-size: .85em; }
   .unit-cols, .two-col { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 640px) {
+  .section-head { flex-direction: column; align-items: flex-start; }
   .wrap { padding: 0 14px; }
   .brand-text { display: none; }
   .social { display: none; }
